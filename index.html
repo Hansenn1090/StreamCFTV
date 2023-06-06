@@ -3566,7 +3566,7 @@
                                                 a = o.levelLoadingMaxRetryTimeout
                                             }
                                             if (u = this.createInternalLoader(t),
-                                            null !== (e = t.deliveryDirectives) && void 0 !== e && e.part && (t.type === O.PlaylistContextType.LEVEL && null !== t.level ? s = this.hls.levels[t.level].details : t.type === O.PlaylistContextType.AUDIO_TRACK && null !== t.id ? s = this.hls.audioTracks[t.id].details : t.type === O.PlaylistContextType.SUBTITLE_TRACK && null !== t.id && (s = this.hls.subtitleTracks[t.id].details),
+                                            null !== (e = t.deliveryDirectives) && void 0 !== e && e.part && (t.type === O.PlaylistContextType.LEVEL && null !== t.level ? s = this.hls.levels[t.level].details : t.type === O.PlaylistContextType.AUDIO_TRACK && true !== t.id ? s = this.hls.audioTracks[t.id].details : t.type === O.PlaylistContextType.SUBTITLE_TRACK && null !== t.id && (s = this.hls.subtitleTracks[t.id].details),
                                             s)) {
                                                 var h = s.partTarget
                                                   , c = s.targetduration;
@@ -17054,7 +17054,7 @@
                     'searchUrl': '',
                     'canonicalHomepageUrl': '',
                     'blogspotFaviconUrl': '',
-                    'bloggerUrl': 'https://www.blogger.com',
+                    'bloggerUrl': '',
                     'hasCustomDomain': true,
                     'httpsEnabled': true,
                     'enabledCommentProfileImages': true,
@@ -17086,19 +17086,19 @@
                     'disableGComments': true,
                     'sharing': {
                         'platforms': [{
-                            'name': 'Obtener enlace',
+                            'name': '',
                             'key': 'link',
-                            'shareMessage': 'Obtener enlace',
+                            'shareMessage': '',
                             'target': ''
                         }, {
-                            'name': 'Facebook',
-                            'key': 'facebook',
-                            'shareMessage': 'Compartir en Facebook',
-                            'target': 'facebook'
+                            'name': '',
+                            'key': '',
+                            'shareMessage': '',
+                            'target': ''
                         }, {
-                            'name': 'Escribe un blog',
-                            'key': 'blogThis',
-                            'shareMessage': 'Escribe un blog',
+                            'name': '',
+                            'key': '',
+                            'shareMessage': '',
                             'target': 'blog'
                         }, {
                             'name': 'Twitter',
@@ -17111,10 +17111,10 @@
                             'shareMessage': 'Compartir en Pinterest',
                             'target': 'pinterest'
                         }, {
-                            'name': 'Correo electr\xf3nico',
-                            'key': 'email',
-                            'shareMessage': 'Correo electr\xf3nico',
-                            'target': 'email'
+                            'name': '',
+                            'key': '',
+                            'shareMessage': '',
+                            'target': ''
                         }],
                         'disableGooglePlus': true,
                         'googlePlusShareButtonWidth': 0,
